@@ -17,7 +17,7 @@ public class EmployeeController {
 
     @GetMapping("/employees")
     public List<Employee> getAllEmployees(){
-        System.out.println("Returning all the available employees");
+        System.out.println("Returning all available employees");
         return employeeRepository.findAll();
     }
 
