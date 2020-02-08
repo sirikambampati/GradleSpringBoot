@@ -23,6 +23,7 @@ public class EmployeeController {
 
     @GetMapping("employees/{id}")
     public Optional<Employee> getAllEmployeeById(@PathVariable(value="id") Integer id){
+        System.out.println("Returning employee : " + id);
         return employeeRepository.findById(id);
     }
 
